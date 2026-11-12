@@ -2,6 +2,7 @@
 <html lang="eng-ca">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise 8: Responsive Web Design</title>
     <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto" rel="stylesheet"> 
     <style>
@@ -11,11 +12,26 @@
       background-color: aqua;
       }
 
-      /* Responsive Design Additions */
+      @media screen and (max-width: 599px) {
+      img, p {
+        width: 100%;
+      }
+        
+      body {
+          background-color: yellow;
+          font-size: 0.75em;
+        }
+      }
+      
+         @media screen and (min-width: 600px) {
+        img {
+          width: 800px;
+        }
 
-      /*your CSS will go here*/
-
-      /* misc. styling */
+        p {
+          width: 600px;
+        }
+      }
 
       ul a {
       color: magenta;
@@ -44,8 +60,6 @@
       padding: 1em 1em 1em 20px;
       }
 
-      /* headers */
-
       h1 , li , h2 {
       font-family: "Roboto", sans-serif;
       }
@@ -71,7 +85,6 @@
   <body>
   <div id="headline"><h1>This is a One Page Website...</h1></div>
   <p>...and we're going to design a desktop and a mobile view for it!</p>
-  <!-- Note the use of hyperlinks below to link WITHIN a page, these are called HTML bookmarks, see https://www.w3schools.com/html/html_links_bookmarks.asp for more info--> 
   <h2>Table of Contents:</h2>
   <ul>
   <li><a href="#One">One</a></li>
